@@ -36,30 +36,18 @@ Only the following attributes are supported in richtext.
 Only a limited css style is supported in richtext. Any style not listed below is not supported.
 
  - `<span>`, `<a>` and `<richtext>` itself
-   -  styles can be inherited
-  		color
-		font-family
-		font-size
-		font-style
-		font-weight
-		line-height
-	
-   - styles cannot be inherited
-		background-color
+   -  styles can be inherited: ```color, font-family, font-size, font-style, font-weight, line-height```
+   
+   - styles cannot be inherited: ```background-color```
  
   - `<span>` also supports the following style
-    - style cannot be inherited
-		text-decoration: none | underline | line-through , the default value is none
+    - style cannot be inherited: text-decoration: none | underline | line-through , the default value is none
 
  - `<richtext>` also supports the following style
-   - style cannot be inherited
-		lines the max line of richtext. Must be a positive integer.
+   - style cannot be inherited: lines the max line of richtext. Must be a positive integer.
 
  - `<image>`
-   - styles cannot be inherite
-	width
-	height
-
+   - styles cannot be inherite: ```width, height```
   
 ## Events
 ### Richtext
