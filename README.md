@@ -72,7 +72,7 @@ Weex common events are supported by the richtext node itself.
 ```
   <template>
     <div>
-        <richtext onitemclick="{{listener}}" style="color:red;text-overflow:ellipsis">
+        <richtext style="color:red;text-overflow:ellipsis">
             <span>link</span>
             <a href="...">
                 <image style="width:150; height:150" src="..." pseudo-ref="22"></image>
@@ -87,13 +87,7 @@ Weex common events are supported by the richtext node itself.
 <script>
     module.exports = {
         methods: {
-            listener: function (foo) {
-                var modal = require('@weex-module/modal');
-                modal.toast({
-                'message': 'My pseudoRef is'+foo.pseudoRef,
-                'duration': 3
-                });
-            }
+            
         }
     }
 </script>
